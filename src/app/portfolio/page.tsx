@@ -94,7 +94,6 @@ const categories = ['All', 'Website', 'Mobile App', 'Dashboard', 'Creative']
 export default function PortfolioPage(){
   const { ref, isVisible } = useScrollAnimation()
   const [filter, setFilter] = useState('All')
-  const [hoveredProject, setHoveredProject] = useState<number | null>(null)
   const [isLoading, setIsLoading] = useState(true)
 
   // Loading effect
@@ -126,10 +125,9 @@ export default function PortfolioPage(){
   }
 
   // Enhanced project image component with better fallback handling
-  const ProjectImage = ({ project }: { project: any }) => {
+  const ProjectImage = ({ project }: { project: { title: string; liveUrl: string; image?: string } }) => {
     const [imageError, setImageError] = useState(false)
     const [screenshotAttempts, setScreenshotAttempts] = useState(0)
-    const screenshotUrl = getScreenshotUrl(project.liveUrl)
     const hasCustomImage = project.image && !project.image.includes('/api/placeholder')
 
     // Available screenshot services
@@ -172,7 +170,7 @@ export default function PortfolioPage(){
       }
     }
 
-    if (hasCustomImage) {
+    if (hasCustomImage && project.image) {
       // Use custom project image if provided
       return (
         <Image
@@ -280,8 +278,6 @@ export default function PortfolioPage(){
                 key={project.title}
                 className={`group cursor-pointer ${isVisible ? 'slide-in-up' : 'opacity-0'}`}
                 style={{animationDelay: `${index * 0.1}s`}}
-                onMouseEnter={() => setHoveredProject(index)}
-                onMouseLeave={() => setHoveredProject(null)}
               >
                 <div className="bg-slate-800/60 backdrop-blur-sm rounded-2xl overflow-hidden border border-slate-700/30 hover:border-blue-400/50 transition-all duration-300 group-hover:scale-105">
 
@@ -383,10 +379,10 @@ export default function PortfolioPage(){
 
             <div className="relative z-10">
               <h2 className="text-3xl lg:text-4xl font-bold text-white mb-6">
-                Let's Work Together
+                Let&apos;s Work Together
               </h2>
               <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-                Have a project in mind? I'd love to hear about it. Let's discuss how we can
+                Have a project in mind? I&apos;d love to hear about it. Let&apos;s discuss how we can
                 bring your ideas to life with cutting-edge technology and creative design.
               </p>
 

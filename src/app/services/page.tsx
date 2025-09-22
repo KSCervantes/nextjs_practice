@@ -9,10 +9,7 @@ import {
   DevicePhoneMobileIcon,
   ShoppingCartIcon,
   BoltIcon,
-  AcademicCapIcon,
-  CodeBracketIcon,
-  SwatchIcon,
-  CpuChipIcon
+  AcademicCapIcon
 } from '@heroicons/react/24/outline'
 
 const services = [
@@ -223,7 +220,7 @@ export default function ServicesPage(){
                 Ready to Start Your Project?
               </h2>
               <p className="text-gray-300 text-lg mb-8 max-w-2xl mx-auto">
-                Let's discuss your ideas and bring them to life. I'm here to help you create
+                Let&apos;s discuss your ideas and bring them to life. I&apos;m here to help you create
                 something amazing that stands out in the digital world.
               </p>
 

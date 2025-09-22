@@ -45,7 +45,7 @@ export default function Hero(){
       }, 100)
       return () => clearInterval(timer)
     }
-  }, [isVisible])
+  }, [isVisible, isLoading])
 
   // Auto-typing effect for roles
   useEffect(() => {
@@ -77,7 +77,7 @@ export default function Hero(){
     }, typingSpeed)
 
     return () => clearTimeout(timer)
-  }, [isVisible, roleText, currentRoleIndex, isDeleting])
+  }, [isVisible, roleText, currentRoleIndex, isDeleting, roles])
 
   return (
     <>

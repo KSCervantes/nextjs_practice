@@ -186,7 +186,7 @@ export default function ResumePage(){
                       emerging technologies, and engage in creative hobbies that fuel my problem-solving
                       mindset. I also find strength and balance through my faith—attending church and
                       taking time to pray helps keep me grounded and inspired. Always open to new
-                      challenges, I'm committed to growing both as a developer and as a person.
+                      challenges, I&apos;m committed to growing both as a developer and as a person.
                     </p>
                   </div>
                 </div>
@@ -220,7 +220,7 @@ export default function ResumePage(){
                         <span className="text-gray-400 text-sm">2024-2025</span>
                       </div>
                       <p className="text-gray-300 text-sm leading-relaxed">
-                        Now in my third year of college, we are developing a <strong>Barangay GIS Health Management Website</strong> and a <strong>Community Bulletin Mobile App</strong>. The website maps health data like facility locations, reported illnesses, and demographics to support data-driven decisions. The mobile app delivers real-time announcements, health tips, and alerts to residents. I'm actively involved in both design and development, gaining hands-on experience in full-stack development, data visualization, and building tech solutions for community needs.
+                        Now in my third year of college, we are developing a <strong>Barangay GIS Health Management Website</strong> and a <strong>Community Bulletin Mobile App</strong>. The website maps health data like facility locations, reported illnesses, and demographics to support data-driven decisions. The mobile app delivers real-time announcements, health tips, and alerts to residents. I&apos;m actively involved in both design and development, gaining hands-on experience in full-stack development, data visualization, and building tech solutions for community needs.
                       </p>
                     </div>
                   </div>

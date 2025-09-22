@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
-import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline'
+import { PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 
 export default function ContactPage(){
   const { ref, isVisible } = useScrollAnimation()
@@ -77,7 +77,7 @@ export default function ContactPage(){
             Get In Touch
           </h1>
           <p className={`text-center text-gray-300 mb-12 max-w-2xl mx-auto ${isVisible ? 'slide-in-left' : ''}`}>
-            Have a project in mind? Let's discuss how we can work together to bring your ideas to life.
+            Have a project in mind? Let&apos;s discuss how we can work together to bring your ideas to life.
           </p>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -165,7 +165,7 @@ export default function ContactPage(){
                 <div className="card interactive-card">
                   <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
                   <div className="space-y-4">
-                    {contactMethods.map((method, index) => (
+                    {contactMethods.map((method) => (
                       <a
                         key={method.label}
                         href={method.href}

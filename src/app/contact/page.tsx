@@ -153,7 +153,7 @@ export default function ContactPage(){
 
                   {/* Map Info Card */}
                   <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg p-3 text-gray-800 text-sm max-w-xs">
-                    <h4 className="font-bold text-red-600">Kyle's Location</h4>
+                    <h4 className="font-bold text-red-600">Kyle&apos;s Location</h4>
                     <p className="text-xs mt-1">Lianga, Surigao del Sur, Philippines</p>
                     <div className="flex items-center mt-2 text-xs text-gray-600">
                       <span className="text-yellow-500">★★★★★</span>
@@ -177,7 +177,7 @@ export default function ContactPage(){
               <div className="w-12 h-1 bg-blue-400 rounded-full ml-4"></div>
             </div>
             <p className="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
-              Ready to collaborate? Let's connect and bring your ideas to life with innovative solutions.
+              Ready to collaborate? Let&apos;s connect and bring your ideas to life with innovative solutions.
             </p>
           </div>
 
@@ -211,12 +211,12 @@ export default function ContactPage(){
             <div className={`${isVisible ? 'slide-in-left' : 'opacity-0'}`}>
               <div className="flex items-center mb-8">
                 <div className="w-12 h-1 bg-blue-400 rounded-full mr-4"></div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-white">Let's Work Together</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold text-white">Let&apos;s Work Together</h2>
               </div>
 
               <p className="text-gray-300 leading-relaxed mb-8">
-                I'm available for freelance projects, full-time opportunities, and consulting work.
-                Let's discuss how we can collaborate to create something amazing.
+                I&apos;m available for freelance projects, full-time opportunities, and consulting work.
+                Let&apos;s discuss how we can collaborate to create something amazing.
               </p>
 
               <div className="grid gap-6">
@@ -333,7 +333,7 @@ export default function ContactPage(){
                         icon: <CameraIcon className="w-6 h-6" />,
                         color: 'from-pink-500 to-purple-600'
                       }
-                    ].map((social, index) => (
+                    ].map((social) => (
                       <button
                         key={social.name}
                         className={`p-4 bg-gradient-to-br ${social.color} rounded-xl text-white font-semibold hover:scale-105 transition-all duration-300 flex items-center justify-center space-x-2`}

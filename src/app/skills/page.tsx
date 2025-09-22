@@ -370,7 +370,7 @@ export default function SkillsPage(){
                   Ready to Work Together?
                 </h2>
                 <p className="text-gray-300 text-base sm:text-lg mb-6 sm:mb-8 max-w-2xl mx-auto px-4">
-                  Let's collaborate on your next project. I'm here to help bring your ideas to life
+                  Let&apos;s collaborate on your next project. I&apos;m here to help bring your ideas to life
                   with cutting-edge design and development solutions.
                 </p>
 
